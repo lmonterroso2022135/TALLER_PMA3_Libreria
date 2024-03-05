@@ -1,0 +1,42 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "userLibraryCollecton",
+    "dateExported": "2024-03-05T23:23:42.116Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5005b344-d2f1-4034-ac32-9d4f76444eb2",
+            "colId": "4f59cc1d-1077-41d5-8abe-12489a31a93f",
+            "containerId": "",
+            "name": "userPost",
+            "url": "http://localhost:3000/library/v1/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-05T20:30:11.023Z",
+            "modified": "2024-03-05T20:35:34.648Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"usesad\",\n  \"email\": \"userad@kinal.edu.gt\",\n  \"password\": \"123456\",\n  \"role\": \"USER\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d1f94d69-39ee-4f2f-9963-350847eb1d21",
+            "colId": "4f59cc1d-1077-41d5-8abe-12489a31a93f",
+            "containerId": "",
+            "name": "usersGet",
+            "url": "http://localhost:3000/library/v1/users",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-05T20:35:06.762Z",
+            "modified": "2024-03-05T20:35:16.324Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

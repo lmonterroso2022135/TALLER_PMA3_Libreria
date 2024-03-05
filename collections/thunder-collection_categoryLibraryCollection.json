@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "categoryLibraryCollection",
+    "dateExported": "2024-03-05T23:24:16.993Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "35a077da-47d4-4ee1-9d9a-c0c2a3cf7d9a",
+            "colId": "57cb8f1e-bac5-481b-9899-bd1f5019773c",
+            "containerId": "",
+            "name": "categoryPost",
+            "url": "http://localhost:3000/library/v1/categories",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-05T22:32:00.624Z",
+            "modified": "2024-03-05T22:32:38.657Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"categoryName\": \"ASSSSSS\",\n  \"description\": \"safssdf\"\n}",
+                "form": []
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "dcd78015-4036-4d45-8615-3ca4788825ff",
+            "colId": "57cb8f1e-bac5-481b-9899-bd1f5019773c",
+            "containerId": "",
+            "name": "categoriesGet",
+            "url": "http://localhost:3000/library/v1/categories",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-05T22:32:50.397Z",
+            "modified": "2024-03-05T22:33:00.368Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e025310b-6ef4-4f5a-baf8-bccb89bd1633",
+            "colId": "57cb8f1e-bac5-481b-9899-bd1f5019773c",
+            "containerId": "",
+            "name": "categoriesPut",
+            "url": "http://localhost:3000/library/v1/categories/65e79d86ca901cfa0c240e76",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-05T22:33:16.421Z",
+            "modified": "2024-03-05T22:33:50.331Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"a b c d e f g\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a664f48f-740b-47eb-a4e5-f0c495cfcf6b",
+            "colId": "57cb8f1e-bac5-481b-9899-bd1f5019773c",
+            "containerId": "",
+            "name": "categoryDelete",
+            "url": "http://localhost:3000/library/v1/categories/65e79d86ca901cfa0c240e76",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-05T22:35:06.221Z",
+            "modified": "2024-03-05T22:35:22.873Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
