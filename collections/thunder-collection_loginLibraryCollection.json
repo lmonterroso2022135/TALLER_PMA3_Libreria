@@ -1,27 +1,28 @@
 {
     "client": "Thunder Client",
     "collectionName": "loginLibraryCollection",
-    "dateExported": "2024-03-05T23:24:07.264Z",
+    "dateExported": "2024-03-06T11:15:01.056Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "c3163860-0c5c-47c4-991f-750deadcc798",
-            "colId": "b631a40b-97a0-4d86-95d2-3b7dffbe2269",
+            "_id": "59e76f15-8c27-43e7-b0ac-1f9883881eda",
+            "colId": "3b8af6f0-f084-485d-a104-f22b608b6e89",
             "containerId": "",
             "name": "login",
             "url": "http://localhost:3000/library/v1/auth/login",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-03-05T20:44:17.209Z",
-            "modified": "2024-03-05T21:30:00.423Z",
+            "created": "2024-03-06T04:41:28.062Z",
+            "modified": "2024-03-06T11:10:55.451Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\": \"userad@kinal.edu.gt\",\n  \"password\": \"123456\"\n}",
+                "raw": "{\n  \"email\": \"user4@kinal.edu.gt\",\n  \"password\": \"123456\"\n}",
                 "form": []
             },
+            "reqType": "post",
             "tests": []
         }
     ]

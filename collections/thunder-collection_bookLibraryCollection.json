@@ -1,0 +1,205 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "bookLibraryCollection",
+    "dateExported": "2024-03-06T11:15:12.264Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "98f91d63-2ae3-4310-aefb-47cbaaf05962",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "bookPost",
+            "url": "http://localhost:3000/library/v1/books",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-06T05:16:34.013Z",
+            "modified": "2024-03-06T11:12:56.409Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU4NGVhM2U0N2FlODlkOGQ5MGNkMWYiLCJpYXQiOjE3MDk3MjM0NTUsImV4cCI6MTcwOTcyNzA1NX0.QTwDbkEsFfOxfvL3uE86beJ6SfdkTKS4wDGArfb23QA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bookName\": \"E\",\n  \"foreword\": \"a b c d e f g\",\n  \"author\": \"a e i o u\",\n  \"category\": \"Romance\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "da16aecc-3554-47b8-a9f4-5a4215258a66",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "booksGet",
+            "url": "http://localhost:3000/library/v1/books",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-06T06:23:30.653Z",
+            "modified": "2024-03-06T06:23:39.770Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "14bbd014-287c-4174-b952-88dbe4da357d",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "bookPut",
+            "url": "http://localhost:3000/library/v1/books/65e84fb2e47ae89d8d90cd4c",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-06T07:04:10.525Z",
+            "modified": "2024-03-06T11:13:52.157Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU4NGVhM2U0N2FlODlkOGQ5MGNkMWYiLCJpYXQiOjE3MDk3MjM0NTUsImV4cCI6MTcwOTcyNzA1NX0.QTwDbkEsFfOxfvL3uE86beJ6SfdkTKS4wDGArfb23QA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"category\": \"Horror\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "40b43164-2625-4a31-b39f-af4d283617c9",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "bookDelete",
+            "url": "http://localhost:3000/library/v1/books/65e84fb8e47ae89d8d90cd51",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-06T07:15:44.578Z",
+            "modified": "2024-03-06T11:14:26.553Z",
+            "headers": [],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "0249d620-17b0-47f4-82aa-fdfaff69b090",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "rentBook",
+            "url": "http://localhost:3000/library/v1/books/rent/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-06T08:18:21.456Z",
+            "modified": "2024-03-06T09:48:57.358Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU3ZjQwZmQyNDEyOGQ2ZjE3MjUwMTEiLCJpYXQiOjE3MDk3MTg1MTcsImV4cCI6MTcwOTcyMjExN30.egmx_qcUklbnY9sR4_a7xdYeY8c-geKgFEOJBfZo_xo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bookName\": \"A\"\n  \n}",
+                "form": []
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "8f266655-d64f-4ee6-963e-153a27214371",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "returnBook",
+            "url": "http://localhost:3000/library/v1/books/return/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-06T08:18:29.904Z",
+            "modified": "2024-03-06T09:31:31.191Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU3ZjQwZmQyNDEyOGQ2ZjE3MjUwMTEiLCJpYXQiOjE3MDk3MTYyNTUsImV4cCI6MTcwOTcxOTg1NX0.mD14rK7Pg_2xLOBlKhDSxqrKPXATvgjinBusic36Wqs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bookName\": \"A\"\n}",
+                "form": []
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "f0136764-b2f2-4234-b702-caa9a8ca698e",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "books_AZ",
+            "url": "http://localhost:3000/library/v1/books/AZ",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-06T10:10:05.984Z",
+            "modified": "2024-03-06T10:11:46.074Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9a23491f-126d-4036-84fc-3c20158a85ac",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "books_ZA",
+            "url": "http://localhost:3000/library/v1/books/ZA",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-06T10:11:58.210Z",
+            "modified": "2024-03-06T10:12:10.943Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "608ea376-6de4-4acd-86e3-b4e0c97c4013",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "booksForAuthor",
+            "url": "http://localhost:3000/library/v1/books/forAuthor",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-06T10:12:34.615Z",
+            "modified": "2024-03-06T10:19:57.314Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"author\": \"idk oo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "73985562-1a71-4aa2-8d4f-f36bcfe7b0ec",
+            "colId": "3d4259f9-ce85-455e-bb3d-8c0c02586ff2",
+            "containerId": "",
+            "name": "booksForCategory",
+            "url": "http://localhost:3000/library/v1/books/forCategory",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-06T10:29:54.610Z",
+            "modified": "2024-03-06T10:31:37.309Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"category\": \"Books\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

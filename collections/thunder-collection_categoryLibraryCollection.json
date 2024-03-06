@@ -1,75 +1,82 @@
 {
     "client": "Thunder Client",
     "collectionName": "categoryLibraryCollection",
-    "dateExported": "2024-03-05T23:24:16.993Z",
+    "dateExported": "2024-03-06T11:14:51.385Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "35a077da-47d4-4ee1-9d9a-c0c2a3cf7d9a",
-            "colId": "57cb8f1e-bac5-481b-9899-bd1f5019773c",
+            "_id": "43fdfe33-01ba-4d01-be18-3e2571176c57",
+            "colId": "57f540f8-648d-4c17-b01d-409dd973523a",
             "containerId": "",
             "name": "categoryPost",
             "url": "http://localhost:3000/library/v1/categories",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-05T22:32:00.624Z",
-            "modified": "2024-03-05T22:32:38.657Z",
-            "headers": [],
+            "created": "2024-03-06T04:41:28.035Z",
+            "modified": "2024-03-06T11:10:39.162Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU4NGUyODgzNWE1YzZlNTY4NTIyZjEiLCJpYXQiOjE3MDk3MjM0MjEsImV4cCI6MTcwOTcyNzAyMX0.3IhZoAZs3S3izTmhOTqKK4SEBhxf8Hz8gKZVeCfI0v0"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"categoryName\": \"ASSSSSS\",\n  \"description\": \"safssdf\"\n}",
+                "raw": "{\n  \"categoryName\": \"R\",\n  \"description\": \"<3\"\n}",
                 "form": []
             },
-            "reqType": "get",
+            "reqType": "post",
             "tests": []
         },
         {
-            "_id": "dcd78015-4036-4d45-8615-3ca4788825ff",
-            "colId": "57cb8f1e-bac5-481b-9899-bd1f5019773c",
+            "_id": "c875d973-6f2f-49ae-a913-4aa01ddcc846",
+            "colId": "57f540f8-648d-4c17-b01d-409dd973523a",
             "containerId": "",
             "name": "categoriesGet",
             "url": "http://localhost:3000/library/v1/categories",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-05T22:32:50.397Z",
-            "modified": "2024-03-05T22:33:00.368Z",
+            "created": "2024-03-06T04:41:28.036Z",
+            "modified": "2024-03-06T04:41:28.036Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "e025310b-6ef4-4f5a-baf8-bccb89bd1633",
-            "colId": "57cb8f1e-bac5-481b-9899-bd1f5019773c",
+            "_id": "8185e44c-ea10-48bf-b99c-deada869fdc0",
+            "colId": "57f540f8-648d-4c17-b01d-409dd973523a",
             "containerId": "",
             "name": "categoriesPut",
-            "url": "http://localhost:3000/library/v1/categories/65e79d86ca901cfa0c240e76",
+            "url": "http://localhost:3000/library/v1/categories/65e7fbe7509a1d353810bda8",
             "method": "PUT",
             "sortNum": 30000,
-            "created": "2024-03-05T22:33:16.421Z",
-            "modified": "2024-03-05T22:33:50.331Z",
+            "created": "2024-03-06T04:41:28.037Z",
+            "modified": "2024-03-06T07:45:35.209Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"description\": \"a b c d e f g\"\n}",
+                "raw": "{\n  \"description\": \"a b c d e f g\",\n  \"state\": true\n}",
                 "form": []
             },
+            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "a664f48f-740b-47eb-a4e5-f0c495cfcf6b",
-            "colId": "57cb8f1e-bac5-481b-9899-bd1f5019773c",
+            "_id": "c496f3c1-5e58-4183-8f9b-d205de5e16a4",
+            "colId": "57f540f8-648d-4c17-b01d-409dd973523a",
             "containerId": "",
             "name": "categoryDelete",
-            "url": "http://localhost:3000/library/v1/categories/65e79d86ca901cfa0c240e76",
+            "url": "http://localhost:3000/library/v1/categories/65e81cf88f0a1b538dc21b1f",
             "method": "DELETE",
             "sortNum": 40000,
-            "created": "2024-03-05T22:35:06.221Z",
-            "modified": "2024-03-05T22:35:22.873Z",
+            "created": "2024-03-06T04:41:28.038Z",
+            "modified": "2024-03-06T07:47:21.621Z",
             "headers": [],
             "params": [],
+            "reqType": "del",
             "tests": []
         }
     ]

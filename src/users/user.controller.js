@@ -42,7 +42,7 @@ export const userPut = async (req, res = response) => {
         resto.password = bcryptjs.hashSync(password, salt);
     }
 
-    const user = await User.findById.findByIdAndUpdate(id, resto);
+    const user = await User.findByIdAndUpdate(id, resto);
 
     res.status(200).json({
         msg: 'Profile actualized',
@@ -53,7 +53,7 @@ export const userPut = async (req, res = response) => {
 // Eliminar perfil
 export const userDelete = async (req, res) => {
     const {id} = req.user;
-    const user = await User.findByIdAndUpdate(id, {estado: false});
+    const user = await User.findByIdAndUpdate(id, {state: false});
     const userAut = req.user;
 
     res.status(200).json({

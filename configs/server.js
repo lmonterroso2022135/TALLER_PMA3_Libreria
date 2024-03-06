@@ -10,6 +10,7 @@ import { dbConnection } from './mongo.js';
 import userRoutes from '../src/users/user.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
 import categoryRoutes from '../src/categories/category.routes.js';
+import bookRoutes from '../src/books/book.routes.js';
 
 class Server{
     constructor(){
@@ -17,7 +18,7 @@ class Server{
         this.port = process.env.PORT;
         this.userPath = '/library/v1/users';
         this.authPath = '/library/v1/auth';
-        // this.bookPath = '/library/v1/publications';
+        this.bookPath = '/library/v1/books';
         this.caregoryPath = '/library/v1/categories';
         this.middlewares();
         this.connectDB();
@@ -30,7 +31,8 @@ class Server{
             Category.create({
                 categoryName: 'Books',
                 description: 'This book doesnt have a category yet'
-            })    
+            })
+            console.log('-> Default category is created.');    
         }
     }
     middlewares(){
@@ -43,13 +45,12 @@ class Server{
     routes(){
         this.app.use(this.userPath, userRoutes);
         this.app.use(this.authPath, authRoutes);
-    //     this.app.use(this.bookPath, );
+        this.app.use(this.bookPath, bookRoutes);
         this.app.use(this.caregoryPath, categoryRoutes);
     }
     listen(){
         this.app.listen(this.port, () => {
             console.log('Server running on port ',this.port);
-
         });
     }
 }

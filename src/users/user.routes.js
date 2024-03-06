@@ -6,9 +6,9 @@ import {
     userPut,
     userDelete
     } from "./user.controller.js";
-// import { validarJWT } from "../middlewares/validar-jwt.js";
-// import { validarCampos } from "../middlewares/validar-campos.js";
-// import { emailExists, usernameExists } from "../helpers/db-validators.js";
+import { validarJWT } from "../middlewares/validar-jwt.js";
+import { validarCampos } from "../middlewares/validar-campos.js";
+import { emailExists} from "../helpers/db-validators.js";
 
 
 const router = Router();
@@ -17,27 +17,26 @@ router.get("/", usersGet);
 
 router.post(
     "/", [
-        check("user", "The username is required").not().isEmpty(),
-        // check("username").custom(usernameExists),
+        check("name", "The name is required").not().isEmpty(),
         check("password", "Password must be greater than 6 characters").isLength({min: 6,}),
         check("email", "The email entered is not valid ").isEmail(),
-        // check("email").custom(emailExists),
-        // validarCampos
+        check("email").custom(emailExists),
+        check("role", "The role is required.").not().isEmpty(),
+        validarCampos
     ],userPost
 );
 
 router.put(
     "/",[
-        // validarJWT,
-        // check('newPassword', '').not().isEmpty(),
-        // check('password', '').not().isEmpty(),
-        // validarCampos
+        validarJWT,
+        check("name", "The name is required").not().isEmpty(),
+        check("role", "The role is required.").not().isEmpty(),
     ],userPut
 );
 
-router.put(
+router.delete(
     "/",
-        // validarJWT,
+    validarJWT,
     userDelete
 );
 
